@@ -23,7 +23,7 @@ public class Main {
 			case 4:
 				re.eliminarEstudiante();
 				break;
-			case 5:
+			case 5: 
 				break;
 
 			}

@@ -23,7 +23,7 @@ public class RegistroEstudiantes {
 		estudiante = new Estudiante(nom, edadEs, mat);
 
 		estudiantes.add(estudiante);
-		// System.out.print(estudiante);
+		// System.out.print(estudiante); 
 	}
 
 	public void mostrarEstudiantes() {

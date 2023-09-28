@@ -30,7 +30,7 @@ public class Estudiante {
 	}
 
 	public void setMatricula(String matricula) {
-		this.matricula = matricula;
+		this.matricula = matricula; 
 	}
 
 }
