@@ -23,7 +23,7 @@ public class Estudiante {
 
 	public void setEdad(int edad) {
 		this.edad = edad;
-	}
+	} 
 
 	public String getMatricula() {
 		return matricula;

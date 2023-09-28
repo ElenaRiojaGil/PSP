@@ -20,7 +20,7 @@ public class RegistroEstudiantes {
 		System.out.print("Introduzca el numero de la matricula del estudiante ");
 		mat = teclado.nextLine();
 
-		estudiante = new Estudiante(nom, edadEs, mat);
+		estudiante = new Estudiante(nom, edadEs, mat); 
 
 		estudiantes.add(estudiante);
 		// System.out.print(estudiante); 

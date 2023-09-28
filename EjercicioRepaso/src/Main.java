@@ -24,7 +24,7 @@ public class Main {
 				re.eliminarEstudiante();
 				break;
 			case 5: 
-				break;
+				break; 
 
 			}
 
