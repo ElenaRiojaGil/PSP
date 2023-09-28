@@ -29,7 +29,7 @@ public class RegistroEstudiantes {
 	public void mostrarEstudiantes() {
 		for (Estudiante e : estudiantes) {
 			System.out.println("Nombre: " + e.getNombre());
-			System.out.println("Edad: " + e.getEdades());
+			System.out.println("Edad: " + e.getEdad());
 			System.out.println("Matricula: " + e.getMatricula() + "\n");
 		}
 
@@ -42,7 +42,7 @@ public class RegistroEstudiantes {
 		for (Estudiante e : estudiantes) {
 			if (e.getMatricula().equals(mat)) {
 				System.out.println("Nombre: " + e.getNombre());
-				System.out.println("Edad: " + e.getEdades());
+				System.out.println("Edad: " + e.getEdad());
 				System.out.println("Matricula: " + e.getMatricula());
 			} else
 				System.out.print("El estudiante no esta registrado ");

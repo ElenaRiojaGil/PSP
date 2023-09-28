@@ -8,7 +8,7 @@ public class Main {
 		do {
 
 			System.out.println(
-					"1. Agregar Estudiante\n2. Mostrar Estudiantes\n3. Buscar Estudiante\n4. Eliminar Estudiante\n5. Salir.");
+					"1. Agregar Estudiante\n2. Mostrar Estudiantes\n3. Buscar Estudiante\n4. Eliminar Estudiante\n5. Salir");
 			num = teclado.nextInt();
 			switch (num) {
 			case 1:

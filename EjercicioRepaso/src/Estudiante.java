@@ -1,11 +1,11 @@
 public class Estudiante {
 	private String nombre;
-	private int edades;
+	private int edad;
 	private String matricula;
 
-	public Estudiante(String nombre, int edades, String matricula) {
+	public Estudiante(String nombre, int edad, String matricula) {
 		this.nombre = nombre;
-		this.edades = edades;
+		this.edad = edad;
 		this.matricula = matricula;
 	}
 
@@ -17,12 +17,12 @@ public class Estudiante {
 		this.nombre = nombre;
 	}
 
-	public int getEdades() {
-		return edades;
+	public int getEdad() {
+		return edad;
 	}
 
-	public void setEdades(int edad) {
-		this.edades = edad;
+	public void setEdad(int edad) {
+		this.edad = edad;
 	}
 
 	public String getMatricula() {
