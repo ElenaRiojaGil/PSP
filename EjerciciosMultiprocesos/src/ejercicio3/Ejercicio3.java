@@ -1,10 +1,11 @@
-package ejercicio1;
+package ejercicio3;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-public class Ejercicio1 {
+public class Ejercicio3 {
 	public static void main(String[] args) {
 		String so = System.getProperty("os.name");
 		String comando;
@@ -17,7 +18,8 @@ public class Ejercicio1 {
 			comando = "ifconfig";
 		}
 		try {
-			Process process = Runtime.getRuntime().exec(comando);
+			Process process = new ProcessBuilder(comando, "datos.txt")
+					.redirectOutput(new File("D:\\Documentos\\ElenaRioja\\PSP\\src\\Ejercicio3")).start();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 			String line = "";
 			while ((line = reader.readLine()) != null) {
