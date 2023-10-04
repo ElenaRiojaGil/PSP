@@ -19,7 +19,7 @@ public class Ejercicio3 {
 		}
 		try {
 			Process process = new ProcessBuilder(comando, "datos.txt")
-					.redirectOutput(new File("D:\\Documentos\\ElenaRioja\\PSP\\src\\Ejercicio3")).start();
+					.redirectOutput(new File("D:\\Documentos\\ElenaRioja\\PSP\\src\\ejercicio3")).start();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 			String line = "";
 			while ((line = reader.readLine()) != null) {
