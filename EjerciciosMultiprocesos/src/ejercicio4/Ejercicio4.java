@@ -1,24 +1,24 @@
-package ejercicio3;
+package ejercicio4;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio4 {
+
 	public static void main(String[] args) {
-		String so = System.getProperty("os.name");
+		// TODO Auto-generated method stubpackage ejercicio3;
+
+		
 		String comando;
+		System.out.println("Comando a ejecutar: ");
+		Scanner teclado = new Scanner(System.in);
+		comando = teclado.nextLine();
 // Determinar comando Windows o Linux
-		if (so.contains("Windows")) {
-			// Some code here
-			comando = "ipconfig";
-		} else {
-			// Some other code here
-			comando = "ifconfig";
-		}
+		
 		try {
-			Process process = new ProcessBuilder(comando).redirectOutput((new File("C:\\Users\\usuario\\Desktop\\DAM\\DAM2\\PSP\\Ejercicios\\EjerciciosMultiprocesos\\src\\ejercicio3/datos.txt"))).start();
+			Process process = new ProcessBuilder(comando).start();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 			String line = "";
 			while ((line = reader.readLine()) != null) {
@@ -27,6 +27,8 @@ public class Ejercicio3 {
 		} catch (IOException e) {
 			System.out.println("Error: " + e);
 		}
+		teclado.close();
 
 	}
+
 }
