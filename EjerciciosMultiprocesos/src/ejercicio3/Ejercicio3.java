@@ -18,7 +18,10 @@ public class Ejercicio3 {
 			comando = "ifconfig";
 		}
 		try {
-			Process process = new ProcessBuilder(comando).redirectOutput((new File("C:\\Users\\usuario\\Desktop\\DAM\\DAM2\\PSP\\Ejercicios\\EjerciciosMultiprocesos\\src\\ejercicio3/datos.txt"))).start();
+			//ProcessBuilder br= new ProcessBuilder(comando);
+			//File file=new File("\\src\\ejercicio3/datos.txt");
+			
+			Process process = new ProcessBuilder(comando).redirectOutput((new File("\\src\\ejercicio3/datos.txt"))).start();
 			BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
 			String line = "";
 			while ((line = reader.readLine()) != null) {
