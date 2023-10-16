@@ -1,6 +1,6 @@
 public class UsaHilo extends Thread {
     public static void main(String[] args) {
-        UsaHilo mihilo = new UsaHilo();
+        UsaHilo mihilo= new UsaHilo();
         mihilo.start();
 
         for (int i=0;i<5;i++){
