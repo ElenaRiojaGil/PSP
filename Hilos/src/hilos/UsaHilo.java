@@ -1,3 +1,4 @@
+package hilos;
 public class UsaHilo extends Thread {
     public static void main(String[] args) {
         UsaHilo mihilo= new UsaHilo();

@@ -1,6 +1,8 @@
 package ejercicio5;
 
 public class sumador {
+	
+	
 	public static void main(String[] args) {
 		if(args.length<2) {
 			System.out.println("Hay que introducir 2 sumandos");
@@ -12,19 +14,14 @@ public class sumador {
 		}
 	}
 	
-	public static int suma(int a, int b) {
-		int resultado=0;
-		int aux=0;
-		if(a>b) {
-			aux=b;
-			b=a;
-			a=aux;
-		}
-		for (int i = a;  i<=b; i++) {
-			resultado+=i;
-			
-		}
-		return resultado;
-	}
+	
+	 public static int suma(int n1, int n2){
+         int resultado=0;
+         for (int i=n1;i<=n2;i++){
+                 resultado=resultado+i;
+         }
+         System.out.println(resultado);
+         return resultado;
+ }
 
 }
